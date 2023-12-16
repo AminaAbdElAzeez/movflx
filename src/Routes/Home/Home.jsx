@@ -7,45 +7,41 @@ import Live from '../../Component/Live/Live';
 import BestFilm from '../../Component/BestFilm/BestFilm';
 
 function Home (props) {
-    const [movies , setMovies] = useState([]);
-
     useEffect(()=>{
-    fetchApi()
-    } , [])
-
+        fetchmoviesHandler()
+    })
     const [movieslist , setmovieslist] = useState([]); 
     const [error , seterror] = useState(null);
-
-    async function fetchApi(){
+    async function fetchmoviesHandler(){
         seterror(null);
-        try{
-            const response = await fetch('http://www.omdbapi.com/?s=star%20wars&apikey=d7d275b8');
+        try {
+            const response = await fetch('http://www.omdbapi.com/?s=star wars&apikey=d7d275b8');
             if(! response.ok){
                 throw new Error ("some thing is wrong");
             }
             const data = await response.json();
-            const dataTransform = data.Search.map((item)=>{
+            const moviesData = data.Search.map((Movie)=>{
                 return{
-                id : item.imdbID ,
-                title : item.Title ,
-                poster : item.Poster ,
-                type : item.Type ,
-                year : item.Year
+                    id : Movie.imdbID ,
+                    title : Movie.Title ,
+                    year : Movie.Year ,
+                    type : Movie.Type ,
+                    poster : Movie.Poster
                 }
             })
-            setMovies(dataTransform);
-        }
-        catch(error){
+            setmovieslist(moviesData)
+            }
+            catch(error){
             seterror(error.message)
         }
     }
     return (
         <div className='home'>
             <Intro/>
-            <Upcoming MyMovies={movies}/>
+            <Upcoming MyMovies={movieslist}/>
             <Service/>
             <Live/>
-            <BestFilm MyMovies={movies}/>
+            <BestFilm MyMovies={movieslist}/>
         </div>
     )
 }
