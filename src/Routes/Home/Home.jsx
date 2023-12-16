@@ -13,19 +13,31 @@ function Home (props) {
     fetchApi()
     } , [])
 
+    const [movieslist , setmovieslist] = useState([]); 
+    const [error , seterror] = useState(null);
+
     async function fetchApi(){
-        const response = await fetch('http://www.omdbapi.com/?s=star%20wars&apikey=d7d275b8');
-        const data = await response.json();
-        const dataTransform = data.Search.map((item)=>{
-            return{
-            id : item.imdbID ,
-            title : item.Title ,
-            poster : item.Poster ,
-            type : item.Type ,
-            year : item.Year
+        seterror(null);
+        try{
+            const response = await fetch('http://www.omdbapi.com/?s=star%20wars&apikey=d7d275b8');
+            if(! response.ok){
+                throw new Error ("some thing is wrong");
             }
-        })
-        setMovies(dataTransform);
+            const data = await response.json();
+            const dataTransform = data.Search.map((item)=>{
+                return{
+                id : item.imdbID ,
+                title : item.Title ,
+                poster : item.Poster ,
+                type : item.Type ,
+                year : item.Year
+                }
+            })
+            setMovies(dataTransform);
+        }
+        catch(error){
+            seterror(error.message)
+        }
     }
     return (
         <div className='home'>
