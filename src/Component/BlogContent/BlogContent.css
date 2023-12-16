@@ -1,0 +1,14 @@
+.blog-content {
+    background-color: #191820;
+
+}
+.blog-content .overlay {
+    background-image: url('../../Assets/ucm_bg_shape.png');
+    padding: 80px 0px;
+}
+hr {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 20px;
+}

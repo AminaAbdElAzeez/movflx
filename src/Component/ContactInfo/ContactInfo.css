@@ -1,0 +1,340 @@
+.contact-info {
+    background-color: #191820;
+
+}
+.contact-info .overlay {
+    background-image: url('../../Assets/ucm_bg_shape.png');
+    padding: 60px 0px;
+}
+.contact-info .overlay .left,
+.contact-info .overlay .right {
+    text-align: left;
+    cursor: pointer;
+}
+.contact-info .overlay .left .sub-title ,
+.contact-info .overlay .right .sub-title {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 30px;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.contact-info .overlay .left .sub-title:hover,
+.contact-info .overlay .right .sub-title:hover {
+    color: #e4d804;
+}
+.contact-info .overlay .left .sub-title + .line,
+.contact-info .overlay .right .sub-title + .line {
+    display: block;
+    background-color: #e4d804;
+    margin-bottom: 35px;
+    width: 50px;
+    height: 3px;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    -ms-transition: width 0.5s;
+    -o-transition: width 0.5s;
+}
+.contact-info .overlay .left .sub-title:hover + .line,
+.contact-info .overlay .left .sub-title + .line:hover ,
+.contact-info .overlay .right .sub-title:hover + .line,
+.contact-info .overlay .right .sub-title + .line:hover {
+    width: 100px;
+}
+.contact-info .overlay .left form {
+    border: 2px solid #333436;
+    text-align: center;
+    padding: 60px 30px;
+    margin: 0px 20px 20px 0px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.contact-info .overlay .left form input,
+.contact-info .overlay .left form textarea {
+    background-color: #1f1e24;
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0,0.8);
+    border: none;
+    color: #fff;
+    font-weight: 600px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: border 0.5s;
+    -webkit-transition: border 0.5s;
+    -moz-transition: border 0.5s;
+    -ms-transition: border 0.5s;
+    -o-transition: border 0.5s;
+}
+.contact-info .overlay .left form input:hover,
+.contact-info .overlay .left form textarea:hover {
+    border: 2px solid #e4d804;
+}
+.contact-info .overlay .left form input:nth-child(1),
+.contact-info .overlay .left form input:nth-child(2) {
+    display: inline-block;
+    width: 45%;
+    height: 50px;
+    padding: 10px 15px;
+    text-transform: capitalize;
+    margin: 0px 20px 25px 0px;
+}
+.contact-info .overlay .left form input:nth-child(3),
+.contact-info .overlay .left form textarea {
+    display: block;
+    width: 93%;
+    height: 50px;
+    padding: 10px 15px;
+    text-transform: capitalize;
+    margin: 0px auto 25px 7px;
+}
+.contact-info .overlay .left form input:nth-child(3) {
+    height: 50px;
+}
+.contact-info .overlay .left form textarea {
+    height: 120px;
+}
+.contact-info .overlay .left form button {
+    width: 93%;
+    height: 50px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    color: #e4d804;
+    border: 2px solid #e4d804;
+    background-color: #12151E;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: color 0.5s , background-color 0.5s;
+    -webkit-transition: color 0.5s , background-color 0.5s;
+    -moz-transition: color 0.5s , background-color 0.5s;
+    -ms-transition: color 0.5s , background-color 0.5s;
+    -o-transition: color 0.5s , background-color 0.5s;
+}
+.contact-info .overlay .left form button:hover {
+    color: #12151E;
+    background-color: #e4d804;
+}
+.contact-info .overlay .right .box {
+    padding: 55px 30px;
+    background-color: #1f1e24;
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0,0.8);
+    color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.contact-info .overlay .right .box .desc {
+    margin-bottom: 25px;
+}
+.contact-info .overlay .right .box .desc > span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1.4px;
+}
+.contact-info .overlay .right .box hr {
+    /* width: 85%; */
+    margin: 0px auto 20px auto;
+    height: 2px;
+    background-color: #333436;
+}
+.contact-info .overlay .right .box  ul {
+    padding: 0px;
+}
+.contact-info .overlay .right .box  ul li {
+    list-style: none;
+    margin-bottom: 20px;
+    font-size: 14px;
+    transition: margin-left 0.5s , color 0.5s;
+    -webkit-transition: margin-left 0.5s , color 0.5s;
+    -moz-transition: margin-left 0.5s , color 0.5s;
+    -ms-transition: margin-left 0.5s , color 0.5s;
+    -o-transition: margin-left 0.5s , color 0.5s;
+}
+.contact-info .overlay .right .box  ul li:hover {
+    margin-left: 10px;
+    color: #e4d804;
+}
+.contact-info .overlay .right .box  ul li .icon {
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 15px;
+    font-size: 17px;
+    background-color: #e4d804;
+    color: #12151E;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.contact-info .overlay .right .box  ul li span {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+}
+@media screen and (max-width:599px) {
+    .contact-info .overlay .left .sub-title ,
+    .contact-info .overlay .right .sub-title {
+        font-size: 22px;
+    }
+    .contact-info .overlay .left form {
+        padding: 40px 15px;
+        margin: 0px 0px 50px 0px;
+        font-size: 14px;
+    }
+    .contact-info .overlay .left form input:nth-child(1),
+    .contact-info .overlay .left form input:nth-child(2) {
+        width: 100%;
+    }
+    .contact-info .overlay .left form input:nth-child(3),
+    .contact-info .overlay .left form textarea {
+        width: 100%;
+        margin: 0px auto 25px auto;
+    }
+    .contact-info .overlay .left form input:nth-child(3) {
+        height: 50px;
+    }
+    .contact-info .overlay .left form button {
+        width: 100%;
+        height: 40px;
+    }
+    .contact-info .overlay .right .box {
+        padding: 40px 25px;
+    }
+    .contact-info .overlay .right .box .desc {
+        font-size: 14px;
+    }
+    .contact-info .overlay .right .box .desc span {
+        font-size: 15px;
+    }
+    .contact-info .overlay .right .box  ul li {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    .contact-info .overlay .right .box  ul li .icon {
+        margin-right: 7px;
+        padding: 10px;
+        font-size: 15px;
+    }
+    .contact-info .overlay .right .box  ul li span {
+        font-size: 14px;
+        
+    }
+}
+@media screen and (min-width:600px) and (max-width:767px) {
+    .contact-info .overlay .left .sub-title ,
+    .contact-info .overlay .right .sub-title {
+        font-size: 28px;
+    }
+    .contact-info .overlay .left form {
+        padding: 40px 15px;
+        margin: 0px 0px 50px 0px;
+        font-size: 14px;
+    }
+    .contact-info .overlay .left form input:nth-child(1),
+    .contact-info .overlay .left form input:nth-child(2) {
+        width: 100%;
+    }
+    .contact-info .overlay .left form input:nth-child(3),
+    .contact-info .overlay .left form textarea {
+        margin: 0px auto 25px auto;
+        width: 100%;
+    }
+    .contact-info .overlay .left form input:nth-child(3) {
+        height: 50px;
+    }
+    .contact-info .overlay .left form button {
+        width: 100%;
+        height: 40px;
+    }
+    .contact-info .overlay .right .box {
+        padding: 40px 25px;
+        width: 100%;
+    }
+    .contact-info .overlay .right .box .desc {
+        font-size: 15px;
+    }
+    .contact-info .overlay .right .box .desc span {
+        font-size: 16px;
+    }
+    .contact-info .overlay .right .box  ul li {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .contact-info .overlay .right .box  ul li .icon {
+        margin-right: 7px;
+        padding: 10px;
+        font-size: 15px;
+    }
+    .contact-info .overlay .right .box  ul li span {
+        font-size: 15px;
+        
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .contact-info .overlay .left .sub-title ,
+    .contact-info .overlay .right .sub-title {
+        font-size: 30px;
+    }
+    .contact-info .overlay .left form {
+        padding: 40px 15px;
+        margin: 0px 0px 50px 0px;
+        font-size: 15px;
+    }
+    .contact-info .overlay .left form input:nth-child(1),
+    .contact-info .overlay .left form input:nth-child(2) {
+        width: 100%;
+    }
+    .contact-info .overlay .left form input:nth-child(3),
+    .contact-info .overlay .left form textarea {
+        margin: 0px auto 25px auto;
+        width: 100%;
+    }
+    .contact-info .overlay .left form input:nth-child(3) {
+        height: 50px;
+    }
+    .contact-info .overlay .left form button {
+        width: 100%;
+        height: 40px;
+    }
+    .contact-info .overlay .right .box {
+        padding: 40px 25px;
+        width: 100%;
+    }
+    .contact-info .overlay .right .box .desc {
+        font-size: 16px;
+    }
+    .contact-info .overlay .right .box .desc span {
+        font-size: 17px;
+    }
+    .contact-info .overlay .right .box  ul li {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .contact-info .overlay .right .box  ul li .icon {
+        margin-right: 7px;
+        padding: 10px;
+        font-size: 16px;
+    }
+    .contact-info .overlay .right .box  ul li span {
+        font-size: 16px;
+        
+    }
+}

@@ -1,0 +1,6 @@
+.map {
+    background-image: url(../../Assets/map.jpg);
+    height: 350px;
+    width: 100%;
+    background-position: center;
+}

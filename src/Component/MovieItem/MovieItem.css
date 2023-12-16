@@ -1,0 +1,157 @@
+.col-lg-3 > .box {
+    max-width: 100%;
+    margin: 20px 0px;
+    height: auto;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    position: relative;
+    padding: 0px 1px 0px 5px;
+    box-sizing: border-box;
+}
+.col-lg-3 > .box::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0%;
+    border-left: 5px solid #e4d804;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    -o-transition: height 0.5s;
+}
+.col-lg-3 > .box::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 0%;
+    border-right: 5px solid #e4d804;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    -o-transition: height 0.5s;
+}
+.col-lg-3 > .box:hover:before {
+    height: 100%;
+}
+.col-lg-3 > .box:hover::after {
+    height: 100%;
+}
+/* .col-lg-3 > .box:hover {
+    border: 1px solid #e4d804;
+} */
+.box .img-box img{
+    max-width: 100%;
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+}
+.box .img-box {
+    overflow: hidden;
+}
+.box:hover .img-box img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.box .text{
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+}
+.box .text .text-header , 
+.box .text .text-footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0px;
+} 
+.box .text a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    margin-right: 10px;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.box .text a:hover{
+    color: #e4d804;
+}
+.box .text .text-header span{
+    color: #e4d804;
+    font-size: 15px;
+}
+.box .text .text-footer span.first{
+    font-size: 10px;
+    width: 45px;
+    height: 30px;
+    line-height: 25px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.box .text .text-footer ul li{
+    list-style-type: none;
+}
+.box .text .text-footer ul li span{
+    font-size: 12px;
+    margin: 0px 3px;
+}
+.box .text .text-footer ul li span .icon{
+    color: #e4d804;
+    margin-right: 5px;
+}
+
+@media screen and (max-width:599px) {
+    .box{
+        max-width: 95%;
+        margin: 20px auto;
+    }
+    .box .img-box img{
+        height: 300px;
+    } 
+}
+@media screen and (min-width:600px) and (max-width:767px) {
+    .box{
+        max-width: 85%;
+        margin: 20px auto;
+    }
+    .box .img-box img{
+        height: 300px;
+    } 
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .box .img-box img{
+        height: 300px;
+    } 
+}

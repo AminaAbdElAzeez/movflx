@@ -1,0 +1,72 @@
+.navbar {
+    background-color: #19222B;
+    box-shadow: 1px -1px 7px #e4d804;
+    color: #fff;
+    padding: 15px 0px;
+}
+.navbar .link {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    text-transform: capitalize;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.navbar .link.active {
+    font-size: 18px;
+    color: #0e66e8;
+    font-weight: bold;
+}
+.navbar .link:hover,
+.navbar .link:active {
+    color: #e4d804;
+}
+.navbar .btn {
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+}
+.navbar .btn:hover {
+    background-color: #171D22;
+}
+@media screen and (max-width:315px) {
+    .navbar .btn {
+        width: 208px;
+    }
+    .navbar .mr-sm-2{
+        margin: 0px;
+    }
+}
+@media screen and (max-width:991px) {
+    .navbar .link {
+        color: #fff;
+        text-align: left;
+        margin: 10px 0px 0px 0px;
+        padding-left: 10px;
+        transition: background-color 0.5s , color 0.5s;
+        -webkit-transition: background-color 0.5s , color 0.5s;
+        -moz-transition: background-color 0.5s , color 0.5s;
+        -ms-transition: background-color 0.5s , color 0.5s;
+        -o-transition: background-color 0.5s , color 0.5s;
+}
+    .navbar .link:hover {
+        background-color: #e4d804;
+        color: #fff;
+}
+    .navbar button {
+        background-color: #e4d804;
+    }
+    .navbar .mr-sm-2,
+    .navbar .btn {
+        margin: 15px 0px ;
+    }
+    .navbar .btn {
+        background-color: #216faf;
+    }
+}
