@@ -13,7 +13,7 @@ function Home (props) {
     } , [])
 
     async function fetchApi(){
-        const response = await fetch(`http://www.omdbapi.com/?s=adventure&apikey=42ef2173`);
+        const response = await fetch(`https://www.omdbapi.com/?s=adventure&apikey=42ef2173`);
         const data = await response.json();
         const dataTransform = data.Search.map((item)=>{
             return{
