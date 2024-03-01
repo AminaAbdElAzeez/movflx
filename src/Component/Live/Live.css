@@ -1,0 +1,171 @@
+.live {
+    background-image: url('../../Assets/live_bg.jpg');
+    background-position: left center;
+    background-size: cover;
+    padding: 100px 0px;
+}
+.live .left {
+    text-align: left;
+    margin-right: 20px;
+}
+.live .left .dash {
+    width: 30px;
+    height: 3px;
+    background-color: #E4D804;
+    display: inline-block;
+    margin: 0px 10px 5px 0px;
+}
+.live .left .dash + h6 {
+    display: inline-block;
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.live .left .title {
+    color: #1E1B29;
+    font-weight: 900;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+.live .left .title + p {
+    color: #777;
+    margin-bottom: 25px;
+}
+.live .left .views {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 35px;
+    text-align: left;
+}
+.live .left .views div {
+    margin-top: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.live .left .views .item-1 {
+    margin-right: 50px;
+}
+.live .left .views .item-1 h2 {
+    font-size: 60px;
+    text-shadow: 0px 3px 24px rgba(160, 160, 160, 0.09);
+    line-height: 1;
+    margin-bottom: 0;
+    color: #d81c2b;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #d81c2b;
+}
+.live .left .views .item-2 h4 {
+    color: #1e1b29;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.live .left .views .item-2 h5 { 
+    color: #1e1b29;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.live .left button {
+    width: 220px;
+    height: 60px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    color: #12151E;
+    border: 2px solid #12151E;
+    background-color: #e4d804;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: color 0.5s , background-color 0.5s;
+    -webkit-transition: color 0.5s , background-color 0.5s;
+    -moz-transition: color 0.5s , background-color 0.5s;
+    -ms-transition: color 0.5s , background-color 0.5s;
+    -o-transition: color 0.5s , background-color 0.5s;
+}
+.live .left button:hover {
+    color: #e4d804;
+    background-color: #12151E;
+}
+.live .left button .icon {
+    margin-right: 7px;
+}
+.live .right {
+    padding-top: 60px;
+}
+.live .right img {
+    width: 100%;
+}
+@media screen and (max-width:991px) {
+    .live .left {
+        margin-right: 0px;
+    }
+    .live .left .dash {
+        margin: 0px 7px 4px 0px;
+    }
+    .live .left .dash + h6 {
+        font-size: 16px;
+    }
+    .live .left .title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .live .left .title + p {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .live .left .views {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+        text-align: center;
+    }
+    .live .left .views div {
+        margin-top: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .live .left .views .item-1 {
+        margin-right: 20px;
+    }
+    .live .left .views .item-1 h2 {
+        font-size: 55px;
+    }
+    .live .left button {
+        width: 100%;
+        margin: auto;
+        height: 45px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:767px) {
+    .live .left .title {
+        font-size: 25px;
+    }
+    .live .left .views .item-1 h2 {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:599px) {   
+    .live .left .dash {
+        margin: 0px 7px 3px 0px;
+    }
+    .live .left .dash + h6 {
+        font-size: 14px;
+    }
+    .live .left .title {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    .live .left .title + p {
+        font-size: 14px;
+    }
+    .live .left button {
+        font-size: 14px;
+    }
+}

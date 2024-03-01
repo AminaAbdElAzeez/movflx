@@ -1,0 +1,215 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.service {
+    background-image: url('../../Assets/tv_series_bg.jpg');
+    padding: 60px 0px 40px 0px;
+    height: auto;
+}
+.service img {
+    width: 70%;
+    height: 550px;
+    display: inline-block;
+    vertical-align: bottom;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.service-box {
+    background-color: #e4d804;
+    width: 130px;
+    height: 288px;
+    display: inline-block;
+    /* margin-top: 245px; */
+    margin: 0 0 0 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.service-box p {
+    transform: rotate(90deg) translateX(132px);
+    -webkit-transform: rotate(90deg) translateX(132px);
+    -moz-transform: rotate(90deg) translateX(132px);
+    -ms-transform: rotate(90deg) translateX(132px);
+    -o-transform: rotate(90deg) translateX(132px);
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    font-weight: 600;
+}
+.service-box p .icon {
+    transform: rotate(270deg) translateX(-3px);
+    -webkit-transform: rotate(270deg) translateX(-3px);
+    -moz-transform: rotate(270deg) translateX(-3px);
+    -ms-transform: rotate(270deg) translateX(-3px);
+    -o-transform: rotate(270deg) translateX(-3px);
+    font-size: 23px;
+}
+.service .right {
+    text-align: left;
+    color: #fff;
+}
+.service .right .dash {
+    width: 30px;
+    height: 3px;
+    background-color: #e4d804;
+    display: inline-block;
+    margin: 0px 10px 5px 0px;
+}
+.service .right .sub-title {
+    display: inline-block;
+    color: #e4d804;
+    margin-bottom: 10px;
+}
+.service .right .sub-title + h2 {
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+.service .right .desc {
+    color: #777;
+    margin-bottom: 15px;
+}
+.service .right .box-item {
+    padding: 15px 0px 5px 115px;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.service .right .box-item .circle {
+    position: absolute;
+    left: 0px;
+    top: 15px;
+    width: 95px;
+    height: 105px;
+    border: 2px dashed #e4d804;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.service .right .box-item .circle .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 25px 20px;
+    font-size: 28px;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+}
+.service .right .box-item:hover .circle .icon {
+    background-color: #e4d804;
+}
+.service .right hr {
+    border: 0;
+    height: 2px;
+    background-color: #777;
+}
+.service .right .box-item .box-title {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    margin-bottom: 10px;
+}
+.service .right .box-item .box-title + p {
+    color: #777;
+}
+@media screen and (max-width:991px) {
+    .service img {
+        height: 288px;
+    }
+    .service .right {
+        text-align: center;
+    }
+    .service .right .dash {
+        margin: 0px 7px 3px 0px;
+    }
+    .service .right .sub-title {
+        margin-top: 50px;
+        font-size: 16px;
+    }
+    .service .right .sub-title + h2 {
+        font-size: 30px;
+        line-height: 1.6;
+    }
+    .service .right .desc {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .service .right .box-item {
+        padding: 15px 0px 5px 0px;
+        text-align: center;
+    }
+    .service .right .box-item .circle {
+        position: relative;
+        margin: 0px auto 30px auto;
+    }
+    .service .right .box-item .circle .icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    .service .right .box-item .box-title {
+        font-size: 25px;
+    }
+    .service .right .box-item .box-title + p {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:767px) {
+    .service img {
+        width: 350px;
+    }
+    .service .right .sub-title {
+        font-size: 14px;
+    }
+    .service .right .sub-title + h2 {
+        font-size: 25px;
+    }
+    .service .right .box-item .box-title {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width:599px) {
+    .service img {
+        margin:0px auto;
+        display: block;
+    }
+    .service-box {
+        display: block;
+        margin: 25px auto 0px auto;
+    }
+    .service .right .sub-title {
+        font-size: 12px;
+    }
+    .service .right .sub-title + h2 {
+        font-size: 18px;
+    }
+    .service .right .box-item .box-title {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:441px) {
+    .service img {
+        width: 90%;
+    }
+}

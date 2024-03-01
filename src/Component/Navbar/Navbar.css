@@ -1,0 +1,114 @@
+.navbar {
+    background-color: #19222B;
+    box-shadow: 1px -1px 7px #e4d804;
+    color: #fff;
+    padding: 15px 0px;
+    box-sizing: border-box;
+    transition: background-color 0.5s , padding 0.5s;
+    -webkit-transition: background-color 0.5s , padding 0.5s;
+    -moz-transition: background-color 0.5s , padding 0.5s;
+    -ms-transition: background-color 0.5s , padding 0.5s;
+    -o-transition: background-color 0.5s , padding 0.5s;
+}
+.navbar-collapse.show {
+    background-color: transparent !important;
+    margin: 18px 0px;
+}
+.navbar .link {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    text-transform: capitalize;
+    transition: color 0.5s ;
+    -webkit-transition: color 0.5s ;
+    -moz-transition: color 0.5s ;
+    -ms-transition: color 0.5s ;
+    -o-transition: color 0.5s ;
+}
+.link.active {
+    color: #0e66e8;
+}
+.navbar .link:hover,
+.navbar .link:active {
+    color: #e4d804;
+}
+.navbar .btn {
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+}
+.nav-wrapper {
+    position: absolute;
+    top: 28px;
+    right: 90px;
+}
+.movies-notification {
+    position: absolute;
+    top: -18px;
+    right: -19px;
+    color: #fff;
+    background-color: red;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.movies-notification-icon {
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+}
+@media screen and (max-width:991px) {
+    .logo {
+        display: none;
+    }
+    .navbar .link {
+        color: #fff;
+        text-align: left;
+        margin: 10px 0px 0px 0px;
+        padding-left: 10px;
+        border-radius: 7px;
+        transition: background-color 0.5s , color 0.5s , margin-left 0.5s;
+        -webkit-transition: background-color 0.5s , color 0.5s , margin-left 0.5s;
+        -moz-transition: background-color 0.5s , color 0.5s , margin-left 0.5s;
+        -ms-transition: background-color 0.5s , color 0.5s , margin-left 0.5s;
+        -o-transition: background-color 0.5s , color 0.5s , margin-left 0.5s;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+}
+    .navbar .link:hover {
+        background-color: #e4d804;
+        color: #fff;
+        margin-left: 10px;
+        border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+}
+    .navbar button {
+        background-color: #e4d804;
+    }
+}
+@media screen and (max-width:810px) {
+    .nav-wrapper {
+        right: 60px;
+    }
+}
+@media screen and (max-width:590px) {
+    .nav-wrapper {
+        right: 30px;
+    }
+}

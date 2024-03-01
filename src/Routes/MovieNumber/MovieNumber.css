@@ -1,0 +1,205 @@
+.movie-number {
+    padding: 120px 0 50px 0;
+    background: url("../../Assets/tv_series_bg.jpg") center/cover no-repeat;
+}
+.movie-number-img {
+    padding: 20px;
+    height: 300px;
+    cursor: pointer;
+    background-color: #9161A9;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.movie-number-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.movie-number-img:hover img {
+    animation: bounce-in-top 1s linear 0s 1 normal none;
+    -webkit-animation: bounce-in-top 1s linear 0s 1 normal none;
+}
+@keyframes bounce-in-top {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+        transform: translateY(-500px);
+    }
+    35% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    55% {
+        animation-timing-function: ease-in;
+        transform: translateY(-65px);
+    }
+    70% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+    80% {
+        animation-timing-function: ease-in;
+        transform: translateY(-28px);
+    }
+    95% {
+        animation-timing-function: ease-in;
+        transform: translateY(-8px);
+    }
+    100% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+}
+.movie-number-wrapper {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 300px;
+    padding: 0 20px;
+}
+.movie-number-wrapper > h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.movie-number-wrapper > h3:hover {
+    color: crimson;
+}
+.movie-number-wrapper p {
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    color: #bbafaf;
+    font-weight: 600;
+}
+.movie-number-wrapper p > b {
+    font-size: 18px;
+    font-weight: 800;
+    color: crimson;
+}
+.movie-number-wrapper button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    border: 3px solid #9161A9;
+    background-color: #fff;
+}
+.movie-number-wrapper button::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 0%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    background-color: #9161A9;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    -o-transition: height 0.5s;
+}
+.movie-number-wrapper button:hover::after {
+    height: 100%;
+}
+.movie-number-wrapper .movie-icon {
+    margin-left: 5px;
+    color: red;
+    font-size: 25px;
+}
+@media screen and (max-width:767px) {
+    .movie-number-img {
+        padding: 10px;
+        height: 250px;
+    }
+    .movie-number-wrapper {
+        height: 250px;
+        padding: 0 10px;
+    }
+    .movie-number-wrapper > h3 {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:575px) {
+    .movie-number-img {
+        padding: 20px;
+        height: 280px;
+        width: 70%;
+        margin: 0 auto 20px auto;
+    }
+    .movie-number-wrapper {
+        height: auto;
+        width: 70%;
+        padding: 0 20px;
+        justify-content: flex-start;
+        margin: 0 auto 10px auto;
+    }
+    .movie-number-wrapper > h3 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:400px) {
+    .movie-number-img {
+        padding: 15px;
+        width: 90%;
+        margin: 0 auto 20px auto;
+    }
+    .movie-number-wrapper {
+        padding: 0 15px;
+        width: 90%;
+    }
+    .movie-number-wrapper button {
+        font-size: 16px;
+    }
+    .movie-number-wrapper .movie-icon {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:280px) {
+    .movie-number-img {
+        padding: 15px;
+        width: 100%;
+        margin: 0 auto 20px auto;
+    }
+    .movie-number-wrapper {
+        padding: 0 10px;
+        width: 100%;
+    }
+    .movie-number-wrapper > h3 {
+        font-size: 18px;
+    }
+    .movie-number-wrapper button {
+        font-size: 16px;
+    }
+}

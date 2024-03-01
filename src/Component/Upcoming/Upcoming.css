@@ -1,0 +1,7 @@
+.upcoming {
+    background-color: #16171E;
+}
+.upcoming .overlay {
+    background-image: url('../../Assets/ucm_bg_shape.png');
+    padding: 70px 0px 50px 0px;
+}

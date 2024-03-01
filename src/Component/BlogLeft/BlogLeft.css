@@ -1,0 +1,209 @@
+.left .box {
+    background-color: #1f1e24;
+    border-radius: 15px;
+    margin:0px 30px 40px 0px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.left .box .img {
+    overflow: hidden;
+}
+.left .box .img img {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    border-radius: 15px 15px 0px 0px;
+    -webkit-border-radius: 15px 15px 0px 0px;
+    -moz-border-radius: 15px 15px 0px 0px;
+    -ms-border-radius: 15px 15px 0px 0px;
+    -o-border-radius: 15px 15px 0px 0px;
+}
+.left .box .text {
+    padding: 0px 20px 50px 20px;
+}
+.left .box .text .sub-title {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 10px;
+}
+.left .box .text .sub-title > .icon {
+    color: #e4d804;
+    margin-right: 7px;
+}
+.left .box .text .sub-title + h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #e4d804;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.left .box .text .sub-title + h2:hover {
+    color: #fff;
+}
+.left .box .text .desc {
+    color: #777;
+    margin-bottom: 15px;
+}
+hr {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 20px;
+}
+.left .box .text .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left .box .text .bottom ul {
+    padding:  10px 0px 0px 0px;
+
+}
+.left .box .text .bottom ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.left .box .text .bottom ul li:hover {
+    color: #e4d804;
+}
+.left .box .text .bottom ul li::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-right: 2px solid #e4d804;
+    width: 100%;
+    height: 100%;
+    margin: 0px 10px;
+}
+.left .box .text .bottom ul li:last-child:after {
+    border: none;
+}
+.left .box .text .bottom ul li .icon {
+    margin-right: 5px;
+}
+.left .box .text .bottom a {
+    font-size: 16px;
+    color: #e4d804;
+    text-decoration: none;
+    display: block;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.left .box .text .bottom a:hover {
+    color: #fff;
+}
+.left .box .text .bottom a .icon:first-child {
+    margin-left: 5px;
+}
+@media screen and (max-width:599px) {
+    .left .box {
+        margin:0px auto 40px auto;
+    }
+    .left .box .img img {
+        width: 100%;
+        height: 200px;
+        margin:0px auto 25px auto;
+    }
+    .left .box .text .sub-title {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .left .box .text .sub-title + h2 {
+        font-size: 17px;
+        margin-bottom: 7px;
+    }
+    .left .box .text .desc {
+        font-size: 14px;
+    }
+    .left .box .text .bottom {
+        flex-direction: column;
+    }
+    .left .box .text .bottom ul li {
+        font-size: 14px;
+        margin:0px 20px 10px 0px;
+    }
+    .left .box .text .bottom a {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width:600px) and (max-width:767px) {
+    .left .box {
+        margin:0px auto 40px auto;
+    }
+    .left .box .img img {
+        width: 100%;
+        height: 200px;
+        margin:0px auto 25px auto;
+    }
+    .left .box .text .sub-title {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .left .box .text .sub-title + h2 {
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+    .left .box .text .desc {
+        font-size: 16px;
+    }
+    .left .box .text .bottom {
+        flex-direction: column;
+    }
+    .left .box .text .bottom ul li {
+        font-size: 16px;
+        margin:0px 20px 10px 0px;
+    }
+    .left .box .text .bottom a {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .left .box {
+        margin:0px auto 40px auto;
+    }
+    .left .box .img img {
+        width: 100%;
+        height: 300px;
+        margin:0px auto 25px auto;
+    }
+    .left .box .text .sub-title {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .left .box .text .sub-title + h2 {
+        font-size: 22px;
+        margin-bottom: 7px;
+    }
+    .left .box .text .desc {
+        font-size: 16px;
+    }
+    .left .box .text .bottom {
+        flex-direction: column;
+    }
+    .left .box .text .bottom ul li {
+        font-size: 16px;
+        margin:0px 20px 10px 0px;
+    }
+    .left .box .text .bottom a {
+        font-size: 16px;
+    }
+}

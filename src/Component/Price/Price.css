@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.price {
+    background-color: #16171E;
+}
+.price .overlay {
+    background-image: url('../../Assets/ucm_bg_shape.png');
+    padding: 50px 0px;
+}
+.price .overlay .top {
+    cursor: pointer;
+}
+.price .overlay .top .sub-title {
+    color: #e4d804;
+    text-align: center;
+}
+.price .overlay .top .sub-title + h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+.price .overlay .top .line {
+    width: 100px;
+    height: 3px;
+    display: block;
+    margin: 20px auto 40px auto;
+    background-color: #e4d804;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    -ms-transition: width 0.5s;
+    -o-transition: width 0.5s;
+}
+.price .overlay .top:hover .line {
+    width: 150px;
+}
+.price .overlay .box {
+    background-color: #1f1e24;
+    cursor: pointer;
+    color: #fff;
+    margin-bottom: 30px;
+    /*text-align: center;
+    */padding: 40px 20px 30px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    /* transition: border 0.5s;
+    -webkit-transition: border 0.5s;
+    -moz-transition: border 0.5s;
+    -ms-transition: border 0.5s;
+    -o-transition: border 0.5s; */
+}
+.price .overlay .box:hover {
+    border: 2px solid #e4d804;
+} 
+.price .overlay .box > span {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+}
+.price .overlay .box .sub-box {
+    background-color: #e4d804;
+    margin: 20px auto;
+    width: 150px;
+    height: 100px;
+    padding: 20px 15px 15px 15px;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.14), inset 0px 3px 7px 0px rgba(0, 0, 0, 0.31);
+    text-align: center;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.price .overlay .box .sub-box > p {
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.price .overlay .box .sub-box span {
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+.price .overlay .box ul {
+    padding: 0px;
+    margin-bottom: 25px;
+}
+.price .overlay .box ul li {
+    list-style: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: color 0.5s , margin-left 0.5s;
+    -webkit-transition: color 0.5s , margin-left 0.5s;
+    -moz-transition: color 0.5s , margin-left 0.5s;
+    -ms-transition: color 0.5s , margin-left 0.5s;
+    -o-transition: color 0.5s , margin-left 0.5s;
+}
+/* .price .overlay .box ul li:last-child {
+    padding-left: 10px;
+} */
+.price .overlay .box ul li:hover {
+    color: #e4d804;
+    margin-left: 10px;
+}
+.price .overlay .box ul li .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.price .overlay .box ul li:hover .text {
+    color: #e4d804;
+}
+.price .overlay .box ul li .text span {
+    display: inline-block;
+}
+.price .overlay .box .btn {
+    width: 130px;
+    height: 40px;
+    display: block;
+    margin: 35px auto 10px auto;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    color: #e4d804;
+    border: 2px solid #e4d804;
+    background-color: #12151E;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: color 0.5s , background-color 0.5s;
+    -webkit-transition: color 0.5s , background-color 0.5s;
+    -moz-transition: color 0.5s , background-color 0.5s;
+    -ms-transition: color 0.5s , background-color 0.5s;
+    -o-transition: color 0.5s , background-color 0.5s;
+}
+.price .overlay .box .btn:hover {
+    color: #12151E;
+    background-color: #e4d804;
+}
+.price .overlay  .col-lg-4:nth-child(2) .box {
+    border: 2px solid #e4d804;
+}
+@media screen and (max-width:991px) {
+    .price .overlay .top .sub-title {
+        font-size: 16px;
+    }
+    .price .overlay .top .sub-title + h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .price .overlay .top .line {
+        margin: 20px auto 25px auto;
+    }
+    .price .overlay .box {
+        padding: 30px 20px;
+    }
+    .price .overlay .box > span {
+        font-size: 14px;
+    }
+    .price .overlay .box .sub-box {
+        width: 100px;
+        height: 80px;
+        padding: 15px 15px 15px 15px;
+    }
+    .price .overlay .box .sub-box > p {
+        font-size: 18px;
+    }
+    .price .overlay .box .sub-box span {
+        font-size: 12px;
+    }
+    .price .overlay .box ul li {
+        font-size: 16px;
+    }
+    .price .overlay .box .btn {
+        width: 90%;
+        margin: auto;
+        height: 40px;
+        font-size: 16px;
+        padding-top: 4px;
+    }
+}
+@media screen and (max-width:767px) {
+    .price .overlay .top .sub-title {
+        font-size: 14px;
+    }
+    .price .overlay .top .sub-title + h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .price .overlay .box {
+        padding: 30px 20px;
+    }
+    .price .overlay .box > span {
+        font-size: 14px;
+    }
+    .price .overlay .box .sub-box {
+        width: 100px;
+        height: 80px;
+        padding: 15px 15px 15px 15px;
+    }
+    .price .overlay .box .sub-box > p {
+        font-size: 18px;
+    }
+    .price .overlay .box .sub-box span {
+        font-size: 12px;
+    }
+    .price .overlay .box ul li {
+        font-size: 14px;
+    }
+    .price .overlay .box .btn {
+        width: 100%;
+        margin: auto;
+        height: 35px;
+        font-size: 12px;
+        padding-top: 4px;
+    }
+}
+@media screen and (max-width:599px) {
+    .price .overlay .top .sub-title {
+        font-size: 14px;
+    }
+    .price .overlay .top .sub-title + h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .price .overlay .box {
+        padding: 30px 20px;
+    }
+    .price .overlay .box > span {
+        font-size: 12px;
+    }
+    .price .overlay .box .sub-box {
+        width: 100px;
+        height: 80px;
+        padding: 18px 15px 15px 15px;
+    }
+    .price .overlay .box .sub-box > p {
+        font-size: 16px;
+    }
+    .price .overlay .box .sub-box span {
+        font-size: 10px;
+    }
+    .price .overlay .box ul li {
+        font-size: 12px;
+    }
+    .price .overlay .box .btn {
+        width: 100%;
+        margin: auto;
+        height: 30px;
+        font-size: 12px;
+        padding-top: 4px;
+    }
+}

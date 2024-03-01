@@ -1,0 +1,100 @@
+.tv {
+    background-color: #16171E;
+}
+.tv .overlay {
+    background-image: url('../../Assets/ucm_bg_shape.png');
+    padding: 50px 0px;
+}
+.tv .overlay .sub-title {
+    color: #e4d804;
+    text-align: left;
+}
+.tv .overlay .sub-title + h2 {
+    color: #fff;
+    text-align: left;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+.tv .right {
+    text-align: right;
+}
+.tv .right button {
+    width: 100px;
+    height: 40px;
+    text-transform: capitalize;
+    margin: 25px 10px 40px 0px;
+    padding: 6px 10px;
+    border: 2px solid #32333a;
+    background-color: #16171E;
+    color: #fff;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    transition: border-color 0.5s , color 0.5s;
+    -webkit-transition: border-color 0.5s , color 0.5s;
+    -moz-transition: border-color 0.5s , color 0.5s;
+    -ms-transition: border-color 0.5s , color 0.5s;
+    -o-transition: border-color 0.5s , color 0.5s;
+}
+.tv .right button:hover {
+    color: #e4d804;
+    border-color: #e4d804;
+}
+@media screen and (max-width:599px) {
+    .tv .overlay .sub-title {
+        font-size: 10px;
+        text-align: center;
+    }
+    .tv .overlay .sub-title + h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+    .tv .right {
+        text-align: center;
+    }
+    .tv .right button {
+        width: 80px;
+        height: 40px;
+        font-size: 14px;
+        margin: 15px 10px 15px 0px;
+    }
+}
+@media screen and (min-width:600px) and (max-width:767px) {
+    .tv .overlay .sub-title {
+        font-size: 14px;
+        text-align: center;
+    }
+    .tv .overlay .sub-title + h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .tv .right {
+        text-align: center;
+    }
+    .tv .right button {
+        width: 80px;
+        height: 40px;
+        font-size: 14px;
+        margin: 20px 10px 20px 0px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .tv .overlay .sub-title {
+        font-size: 14px;
+    }
+    .tv .overlay .sub-title + h2 {
+        font-size: 35px;
+    }
+    .tv .right {
+        text-align: right;
+    }
+    .tv .right button {
+        width: 75px;
+        height: 40px;
+        font-size: 12px;
+        margin: 25px 5px 20px 0px;
+    }
+}

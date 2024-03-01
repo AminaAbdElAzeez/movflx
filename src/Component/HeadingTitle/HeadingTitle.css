@@ -1,0 +1,42 @@
+.top-sub-title {
+    color: #e4d804;
+    text-align: left;
+}
+.top-sub-title + h2 {
+    color: #fff;
+    text-align: left;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width:991px) {
+    .top-sub-title {
+        font-size: 14px;
+    }
+    .top-sub-title + h2 {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width:767px) {
+    .top-sub-title {
+        text-align: center;
+    }
+    .top-sub-title + h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:599px) {
+    .top-sub-title {
+        font-size: 12px;
+    }
+    .top-sub-title + h2 {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:320px) {
+    .top-sub-title + h2 {
+        font-size: 20px;
+    }
+}

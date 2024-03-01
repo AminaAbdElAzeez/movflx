@@ -1,0 +1,128 @@
+.new {
+    background-color: #16171E;
+}
+.new .overlay {
+    background-image: url('../../Assets/ucm_bg_shape.png');
+    padding: 50px 0px;
+}
+.new-movie-item {
+    height: 350px;
+    padding: 15px;
+    background-color: #E4D804;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 1;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.new-movie-item > img {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
+}
+.new-movie-item::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0,0,0,0.9);
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    -o-transition: height 0.5s;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.new-movie-item:hover::after {
+    height: 100%;
+}
+.new-movie-btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    /* z-index: 5; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s,visibility 0.5s ;
+    -webkit-transition: opacity 0.5s,visibility 0.5s ;
+    -moz-transition: opacity 0.5s,visibility 0.5s ;
+    -ms-transition: opacity 0.5s,visibility 0.5s ;
+    -o-transition: opacity 0.5s,visibility 0.5s ;
+}
+.new-movie-item:hover .new-movie-btn {
+    opacity: 1;
+    visibility: visible;
+}
+.new-movie-btn button {
+    width: 40px;
+    height: 50px;
+    border: 2px solid #a79f0b;
+    background-color: #fff;
+    color: #16171E;
+    font-size: 18px;
+    padding: 5px;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+}
+.new-movie-btn button:first-of-type {
+    border-radius: 0 15px 0 0;
+    -webkit-border-radius: 0 15px 0 0;
+    -moz-border-radius: 0 15px 0 0;
+    -ms-border-radius: 0 15px 0 0;
+    -o-border-radius: 0 15px 0 0;
+}
+.new-movie-btn button:last-of-type {
+    border-radius: 0 0px 0 15px;
+    -webkit-border-radius: 0 0px 0 15px;
+    -moz-border-radius: 0 0px 0 15px;
+    -ms-border-radius: 0 0px 0 15px;
+    -o-border-radius: 0 0px 0 15px;
+}
+.new-movie-btn button:hover {
+    background-color: #E4D804;
+}
+.new-movie-title {
+    font-size: 18px;
+    margin: 15px 0;
+    color: #000;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.new-movie-item:hover .new-movie-title {
+    color: #fff;
+}
+@media screen and (max-width:575px) {
+    .new-movie-item {
+        width: 300px;
+        margin: 0 auto 20px auto;
+    }
+}
+@media screen and (max-width:350px) {
+    .new-movie-item {
+        width: 210px;
+    }
+}

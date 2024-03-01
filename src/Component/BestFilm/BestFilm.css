@@ -1,0 +1,7 @@
+.best{
+    background: url("../../Assets/tv_series_bg.jpg") center/cover no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 70px 0px;
+    overflow: hidden;
+}
